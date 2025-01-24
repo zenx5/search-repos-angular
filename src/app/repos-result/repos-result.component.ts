@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { FetchGithubService } from '../fetch-github.service';
-import { LinkPathPipe } from '../link-path.pipe';
 import { Router } from '@angular/router';
+import { RepoListComponent } from '../repo-list/repo-list.component';
 
 @Component({
   selector: 'repos-result',
-  imports: [LinkPathPipe],
+  imports: [RepoListComponent],
   templateUrl: './repos-result.component.html',
   styleUrl: './repos-result.component.css'
 })

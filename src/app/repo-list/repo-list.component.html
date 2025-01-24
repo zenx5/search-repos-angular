@@ -1,0 +1,5 @@
+<ul>
+    @for(repo of items; track repo.id) {
+      <repo-item [name]="repo.name" [url]="repo.html_url" />
+    }
+</ul>

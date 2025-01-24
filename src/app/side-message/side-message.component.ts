@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './side-message.component.css'
 })
 export class SideMessageComponent {
-
+  
 }

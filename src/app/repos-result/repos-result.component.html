@@ -1,11 +1,4 @@
-<h2 class="text-xl font-bold">Resultados</h2>
+<h2 class="text-3xl font-bold mb-4">Resultados</h2>
 <div class="h-full scroll-auto">
-    <ul>
-      @for(repo of repos; track repo.id) {
-        <li class="flex flex-row justify-between py-1 px-2">
-          <span>{{ repo.name }}</span>
-          <a [href]="repo.html_url" target="_blank" class="cursor-pointer italic">{{ repo.html_url | linkPath }}</a>
-        </li>
-      }
-    </ul>
- </div>
+  <repo-list [items]="repos" />
+</div>
