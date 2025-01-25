@@ -6,5 +6,8 @@
         <span class="font-bold">Usuario:</span>
         <input placeholder="Usuario" class="border border-slate-400 rounded py-1 px-2" formControlName="username"/>
     </label>
-    <button class="bg-blue-700 text-white px-4 py-1 rounded-lg">Consultar</button>
+    <button class="bg-blue-700 text-white px-4 py-1 rounded-lg cursor-pointer hover:bg-blue-500 active:bg-blue-800">
+        @if( loading ) { <span>Enviando...</span> }
+        @else { <span>Consultar</span> }
+    </button>
 </form>

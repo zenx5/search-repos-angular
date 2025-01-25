@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { ReactiveFormsModule, FormGroup, FormControl } from '@angular/forms'
 
 @Component({
@@ -8,6 +8,7 @@ import { ReactiveFormsModule, FormGroup, FormControl } from '@angular/forms'
   styleUrl: './form-repo.component.css'
 })
 export class FormRepoComponent {
+  @Input() loading:boolean = false
   @Output() submitRepo = new EventEmitter<string>();
   user = new FormGroup({
     username: new FormControl('')
