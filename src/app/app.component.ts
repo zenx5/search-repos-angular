@@ -1,7 +1,7 @@
-import { Component, inject } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router, RouterOutlet } from '@angular/router';
-import { FormRepoComponent } from './form-repo/form-repo.component';
-import { FetchGithubService } from './fetch-github.service';
+import { FormRepoComponent } from './components/form-repo/form-repo.component';
+import { FetchGithubService } from './services/fetch-github.service';
 
 @Component({
   selector: 'app-root',

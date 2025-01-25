@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FetchGithubService } from '../fetch-github.service';
+import { FetchGithubService } from '../../services/fetch-github.service';
 import { Router } from '@angular/router';
-import { RepoListComponent } from '../repo-list/repo-list.component';
+import { RepoListComponent } from '@components/repo-list/repo-list.component';
 
 @Component({
   selector: 'repos-result',

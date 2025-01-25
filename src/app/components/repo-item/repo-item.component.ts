@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { LinkPathPipe } from '../link-path.pipe';
+import { LinkPathPipe } from '@pipes/link-path.pipe';
 
 @Component({
   selector: 'repo-item',
